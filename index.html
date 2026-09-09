@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Luna Imperial Construtora — obras comerciais e residenciais de alto padrão no Vale do São Francisco."
+    />
+    <title>Luna Imperial | Construtora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+  </head>
+  <body>
+    <!-- INÍCIO: Cabeçalho e navegação principal -->
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Luna Imperial — início">
+        <img class="brand-logo" src="./assets/logo.png" alt="Luna Imperial Construtora" />
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#a-construtora">A construtora</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#atuacao">Atuação</a>
+      </nav>
+
+      <a class="header-contact" href="#contato">
+        <span>Fale conosco</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-toggle
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Navegação móvel" data-mobile-menu>
+      <a href="#a-construtora">A construtora</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#contato">Fale conosco</a>
+    </nav>
+    <!-- FIM: Cabeçalho e navegação principal -->
+
+    <main>
+      <!-- INÍCIO: Hero -->
+      <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-media"
+          src="./assets/hero-dusk.jpg"
+          alt="Residência contemporânea com volumes marcantes iluminada ao entardecer"
+          fetchpriority="high"
+        />
+        <video
+          class="hero-media hero-video"
+          src="./assets/hero-video.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          data-reveal-video
+          aria-hidden="true"
+        ></video>
+        <div class="hero-scrim" aria-hidden="true"></div>
+
+        <div class="hero-grid">
+          <p class="eyebrow hero-location">Vale do São Francisco <span aria-hidden="true">—</span> BR</p>
+
+          <div class="hero-copy">
+            <p class="eyebrow hero-kicker">Construtora de alto padrão</p>
+            <h1 id="hero-title">Força que<br /><em>constrói</em> sonhos.</h1>
+          </div>
+
+          <div class="hero-footer">
+            <p class="hero-intro">
+              Obras comerciais e residenciais que unem excelência técnica, gestão eficiente e precisão em cada detalhe.
+            </p>
+            <a class="circle-link" href="#projetos" aria-label="Conheça os projetos selecionados"></a>
+            <p class="hero-index" aria-label="Seção 1 de 4">01 <span aria-hidden="true">/</span> 04</p>
+          </div>
+        </div>
+      </section>
+      <!-- FIM: Hero -->
+
+      <!-- INÍCIO: Apresentação institucional -->
+      <section id="a-construtora" class="about section-space" aria-labelledby="about-title">
+        <div class="section-grid">
+          <p class="section-label reveal">01 <span aria-hidden="true">—</span> A construtora</p>
+          <div class="about-statement reveal">
+            <h2 id="about-title">A técnica encontra a <em>intenção</em> de cada projeto.</h2>
+            <p>
+              A Luna Imperial Construtora atua na execução de obras comerciais e residenciais de alto padrão no Vale do São Francisco, unindo gestão eficiente e excelência técnica.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-team reveal">
+          <figure class="about-image">
+            <img
+              src="./assets/about-worker.jpg"
+              alt="Stênio Luna, engenheiro civil e fundador da Luna Imperial, em obra ao lado de equipamento de concreto"
+              loading="lazy"
+            />
+            <figcaption>
+              <span class="about-image-name">Stênio Luna</span>
+              <span class="about-image-role">Engenheiro Civil <span aria-hidden="true">—</span> Fundador</span>
+            </figcaption>
+          </figure>
+
+          <div class="about-bio">
+            <p class="about-bio-label">Quem constrói</p>
+            <p class="about-bio-text">
+              Engenheiro Civil formado, Stênio Luna lidera a Luna Imperial com uma visão pautada pela qualidade, precisão e profissionalismo. À frente de cada projeto, acompanha de perto cada etapa para garantir que cada construção traduza o compromisso da empresa com a excelência.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- FIM: Apresentação institucional -->
+
+      <!-- INÍCIO: Projetos selecionados -->
+      <section id="projetos" class="projects section-space" aria-labelledby="projects-title">
+        <div class="section-grid projects-heading">
+          <p class="section-label reveal">02 <span aria-hidden="true">—</span> Projetos selecionados</p>
+          <div class="reveal">
+            <h2 id="projects-title">Espaços que valorizam o que está por <em>vir.</em></h2>
+          </div>
+        </div>
+
+        <div class="project-feature reveal">
+          <img
+            src="./assets/project-golden-1.jpg"
+            alt="Fachada de residência contemporânea com iluminação arquitetônica"
+            loading="lazy"
+          />
+          <div class="project-caption">
+            <p>Residencial</p>
+            <span>Execução de alto padrão</span>
+          </div>
+        </div>
+
+        <div class="project-feature project-feature-video reveal">
+          <img
+            class="feature-bg"
+            src="./assets/project-commercial-poster.jpg"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <img
+            class="feature-poster"
+            src="./assets/project-commercial-poster.jpg"
+            alt="Fachada de edifício comercial entregue pela Luna Imperial"
+            loading="lazy"
+          />
+          <video
+            class="feature-poster feature-video"
+            src="./assets/project-commercial-video.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            data-reveal-video
+            aria-hidden="true"
+          ></video>
+          <div class="project-caption">
+            <p>Comercial</p>
+            <span>Execução de alto padrão</span>
+          </div>
+        </div>
+
+        <div class="project-secondary reveal">
+          <div class="project-gallery" data-gallery>
+            <ul class="project-gallery-track" data-gallery-track>
+              <li class="project-gallery-slide">
+                <img
+                  src="./assets/project-golden-2.jpg"
+                  alt="Residência contemporânea vista em ângulo, com iluminação de destaque na fachada"
+                  loading="lazy"
+                />
+              </li>
+              <li class="project-gallery-slide">
+                <img
+                  src="./assets/project-driveway.jpg"
+                  alt="Residência com acesso em pedra portuguesa e paisagismo no jardim frontal"
+                  loading="lazy"
+                />
+              </li>
+              <li class="project-gallery-slide">
+                <img
+                  src="./assets/project-18.jpg"
+                  alt="Residência de dois pavimentos com revestimento em pedra e marquise em madeira"
+                  loading="lazy"
+                />
+              </li>
+              <li class="project-gallery-slide">
+                <img
+                  src="./assets/project-commercial.jpg"
+                  alt="Edifício comercial de três pavimentos entregue pela Luna Imperial"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+
+            <div class="project-gallery-controls">
+              <button class="gallery-btn" type="button" data-gallery-prev aria-label="Projeto anterior">
+                <span aria-hidden="true">←</span>
+              </button>
+
+              <p class="gallery-index" aria-live="polite">
+                <span data-gallery-current>01</span> <span aria-hidden="true">/</span>
+                <span data-gallery-total>04</span>
+              </p>
+
+              <button class="gallery-btn" type="button" data-gallery-next aria-label="Próximo projeto">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <p>
+            Transformamos projetos em empreendimentos que valorizam seus espaços e investimentos.
+          </p>
+        </div>
+
+        <div class="compare-section reveal">
+          <p class="section-label">Acompanhe a obra <span aria-hidden="true">—</span> antes e depois</p>
+
+          <div class="compare-pair">
+            <div class="compare" data-compare style="--pos: 50%">
+              <img class="compare-img compare-after" src="./assets/project-driveway.jpg" alt="Fachada da residência já concluída, iluminada ao entardecer" />
+              <img class="compare-img compare-before" src="./assets/compare-house-before.jpg" alt="Mesma fachada ainda em fase de acabamento, durante a obra" />
+              <span class="compare-tag compare-tag-before">Antes</span>
+              <span class="compare-tag compare-tag-after">Depois</span>
+              <div class="compare-handle" aria-hidden="true"></div>
+              <input
+                class="compare-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Arraste para comparar a fachada antes e depois da obra"
+              />
+            </div>
+
+            <div class="compare" data-compare style="--pos: 50%">
+              <img class="compare-img compare-after" src="./assets/compare-pool-after.jpg" alt="Piscina finalizada com parede de pedra e cascata" />
+              <img class="compare-img compare-before" src="./assets/compare-pool-before.jpg" alt="Área da piscina ainda em obra, sem revestimento" />
+              <span class="compare-tag compare-tag-before">Antes</span>
+              <span class="compare-tag compare-tag-after">Depois</span>
+              <div class="compare-handle" aria-hidden="true"></div>
+              <input
+                class="compare-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Arraste para comparar a piscina antes e depois da obra"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM: Projetos selecionados -->
+
+      <!-- INÍCIO: Serviços -->
+      <section id="atuacao" class="services section-space" aria-labelledby="services-title">
+        <div class="section-grid services-heading">
+          <p class="section-label reveal">03 <span aria-hidden="true">—</span> Atuação</p>
+          <div class="reveal">
+            <h2 id="services-title">Rigor em cada escala da <em>obra.</em></h2>
+          </div>
+        </div>
+
+        <ol class="services-list">
+          <li class="reveal">
+            <span class="service-number">01</span>
+            <h3>Execução de obras comerciais e de alto padrão</h3>
+          </li>
+          <li class="reveal">
+            <span class="service-number">02</span>
+            <h3>Projetos hidrossanitários</h3>
+          </li>
+          <li class="reveal">
+            <span class="service-number">03</span>
+            <h3>Projetos elétricos</h3>
+          </li>
+          <li class="reveal">
+            <span class="service-number">04</span>
+            <h3>Projetos estruturais</h3>
+          </li>
+        </ol>
+      </section>
+      <!-- FIM: Serviços -->
+
+      <!-- INÍCIO: Contato e rodapé -->
+      <section id="contato" class="contact" aria-labelledby="contact-title">
+        <div class="contact-top">
+          <p class="section-label reveal">04 <span aria-hidden="true">—</span> Contato</p>
+          <h2 id="contact-title" class="reveal">Vamos dar forma ao seu <em>próximo</em> projeto.</h2>
+        </div>
+
+        <div class="contact-links reveal">
+          <a
+            class="contact-card"
+            href="https://wa.me/5587988636434"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Conversar no WhatsApp com (87) 98863-6434"
+          >
+            <svg class="icon-whatsapp" aria-hidden="true" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.36 5.06L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.07c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.93-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .9 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.42.51-.14.14-.29.29-.12.58.17.29.76 1.25 1.64 2.03 1.13 1 2.08 1.32 2.38 1.47.29.14.46.12.63-.07.18-.19.75-.87.95-1.17.19-.29.39-.24.66-.14.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.14.07.72-.17 1.4Z" /></svg>
+            <span class="contact-card-copy"><span class="contact-label">Nosso WhatsApp</span><span class="contact-value">(87) 98863-6434</span></span>
+          </a>
+          <a class="contact-card" href="mailto:lunaimperialeng@gmail.com">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m3 6 9 7 9-7" /></svg>
+            <span class="contact-card-copy"><span class="contact-label">Nosso e-mail</span><span class="contact-value">lunaimperialeng@gmail.com</span></span>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/lunaimperial.construtora/" target="_blank" rel="noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+            <span class="contact-card-copy"><span class="contact-label">Nosso Instagram</span><span class="contact-value">@lunaimperial.construtora</span></span>
+          </a>
+        </div>
+
+        <footer class="site-footer">
+          <a class="brand" href="#inicio" aria-label="Voltar ao início">
+            <img class="brand-logo" src="./assets/logo.png" alt="Luna Imperial Construtora" />
+          </a>
+          <p>Força que constrói sonhos.</p>
+          <p>© <span data-year></span> Luna Imperial Construtora</p>
+        </footer>
+      </section>
+      <!-- FIM: Contato e rodapé -->
+    </main>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
