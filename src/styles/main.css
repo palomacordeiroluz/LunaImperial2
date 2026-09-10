@@ -139,6 +139,7 @@ h1 em { font-weight: 500; }
 .section-label span { margin: 0 0.32rem; color: var(--gold); }
 
 .about { background: var(--paper); color: var(--ink); }
+.about.section-space { padding-top: clamp(4rem, 7vw, 6rem); padding-bottom: clamp(4rem, 7vw, 6rem); }
 .about .section-label { grid-column: 1 / 4; }
 .about-statement { grid-column: 5 / 12; }
 h2 { max-width: 12ch; margin: 0; font-family: var(--display); font-size: clamp(2.75rem, 5.2vw, 6.3rem); font-weight: 500; letter-spacing: -0.06em; line-height: 0.96; }
@@ -267,6 +268,10 @@ h2 em { font-weight: 500; }
 }
 
 .project-gallery-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.project-gallery-slide.is-landscape img {
+  object-fit: contain;
+  background: var(--ink-soft);
+}
 
 .project-gallery-controls {
   display: flex;
@@ -431,6 +436,7 @@ h2 em { font-weight: 500; }
 /**************************** INÍCIO: Adaptação para tablet e mobile *********************************/
 
 @media (max-width: 780px) {
+  .about.section-space { padding-top: 4rem; padding-bottom: 2.5rem; }
   .site-header { height: 5.25rem; }
   .desktop-nav, .header-contact { display: none; }
   .menu-toggle { display: grid; width: 2.75rem; height: 2.75rem; padding: 0; place-content: center; gap: 0.38rem; border: 1px solid rgba(244, 241, 234, 0.5); border-radius: 50%; background: transparent; color: var(--paper); cursor: pointer; }

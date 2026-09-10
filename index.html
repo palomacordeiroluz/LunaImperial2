@@ -139,9 +139,31 @@
           </div>
         </div>
 
+        <div class="compare-section reveal">
+          <p class="section-label">Acompanhe a obra <span aria-hidden="true">—</span> antes e depois</p>
+
+          <div class="compare-pair" style="grid-template-columns: 1fr">
+            <div class="compare" data-compare style="--pos: 50%">
+              <img class="compare-img compare-after" src="./assets/project-driveway.jpg" alt="Fachada da residência já concluída, iluminada ao entardecer" />
+              <img class="compare-img compare-before" src="./assets/compare-house-before.jpg" alt="Mesma fachada ainda em fase de acabamento, durante a obra" />
+              <span class="compare-tag compare-tag-before">Antes</span>
+              <span class="compare-tag compare-tag-after">Depois</span>
+              <div class="compare-handle" aria-hidden="true"></div>
+              <input
+                class="compare-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Arraste para comparar a fachada antes e depois da obra"
+              />
+            </div>
+          </div>
+        </div>
+
         <div class="project-feature reveal">
           <img
-            src="./assets/project-golden-1.jpg"
+            src="./assets/project-18.jpg"
             alt="Fachada de residência contemporânea com iluminação arquitetônica"
             loading="lazy"
           />
@@ -192,7 +214,7 @@
                   loading="lazy"
                 />
               </li>
-              <li class="project-gallery-slide">
+              <li class="project-gallery-slide is-landscape">
                 <img
                   src="./assets/project-driveway.jpg"
                   alt="Residência com acesso em pedra portuguesa e paisagismo no jardim frontal"
@@ -206,13 +228,23 @@
                   loading="lazy"
                 />
               </li>
-              <li class="project-gallery-slide">
+              <li class="project-gallery-slide is-landscape">
                 <img
                   src="./assets/project-commercial.jpg"
                   alt="Edifício comercial de três pavimentos entregue pela Luna Imperial"
                   loading="lazy"
                 />
               </li>
+              
+              <li class="project-gallery-slide is-landscape">
+                <img
+                  src="./assets/hero-dusk.jpg"
+                  alt="Edifício comercial de três pavimentos entregue pela Luna Imperial"
+                  loading="lazy"
+                />
+              </li>
+
+              
             </ul>
 
             <div class="project-gallery-controls">
@@ -239,23 +271,7 @@
         <div class="compare-section reveal">
           <p class="section-label">Acompanhe a obra <span aria-hidden="true">—</span> antes e depois</p>
 
-          <div class="compare-pair">
-            <div class="compare" data-compare style="--pos: 50%">
-              <img class="compare-img compare-after" src="./assets/project-driveway.jpg" alt="Fachada da residência já concluída, iluminada ao entardecer" />
-              <img class="compare-img compare-before" src="./assets/compare-house-before.jpg" alt="Mesma fachada ainda em fase de acabamento, durante a obra" />
-              <span class="compare-tag compare-tag-before">Antes</span>
-              <span class="compare-tag compare-tag-after">Depois</span>
-              <div class="compare-handle" aria-hidden="true"></div>
-              <input
-                class="compare-range"
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                aria-label="Arraste para comparar a fachada antes e depois da obra"
-              />
-            </div>
-
+          <div class="compare-pair" style="grid-template-columns: 1fr">
             <div class="compare" data-compare style="--pos: 50%">
               <img class="compare-img compare-after" src="./assets/compare-pool-after.jpg" alt="Piscina finalizada com parede de pedra e cascata" />
               <img class="compare-img compare-before" src="./assets/compare-pool-before.jpg" alt="Área da piscina ainda em obra, sem revestimento" />
@@ -348,3 +364,5 @@
     <script src="./src/js/main.js"></script>
   </body>
 </html>
+HTMLEOF
+wc -l /home/claude/luna-edit/index.html
