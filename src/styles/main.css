@@ -489,6 +489,38 @@ h2 em { font-weight: 500; }
   .site-footer p:nth-child(2), .site-footer p:last-child { justify-self: start; text-align: left; }
 }
 
+
+.whatsapp-float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+  transition: transform 200ms ease;
+}
+
+.whatsapp-float svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: currentColor;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 780px) {
+  .whatsapp-float { right: 1rem; bottom: 1rem; width: 3.1rem; height: 3.1rem; }
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 1ms !important; transition-duration: 1ms !important; }
 }
